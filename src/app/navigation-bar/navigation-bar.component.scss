@@ -1,0 +1,33 @@
+@import '../../scss/colors.scss';
+
+.navbar-candella {
+  padding: 0;
+  background-color: $color-dark;
+  color: $color-accent;
+  i {
+    color: $color-accent;
+    font-size: 1.5em;
+  }
+  vertical-align: middle;
+}
+
+.brand-image {
+  height: 2em;
+  width: auto;
+  margin: 0 0 0.5em 1em;
+  border-radius: 50%;
+  filter: invert(1);
+}
+
+.navbar-brand {
+  margin-right: 1em;
+  padding-bottom: 0.1em;
+}
+
+.navbar-nav {
+  padding-right: 1em;
+  @media (max-width: 575px) {
+    padding: 1em 2em;
+    background: darken($color-dark, 5%);
+  }
+}
