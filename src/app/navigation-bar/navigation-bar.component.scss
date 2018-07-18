@@ -2,7 +2,7 @@
 
 .navbar-candella {
   padding: 0;
-  background-color: $color-dark;
+  background-color: $color-main;
   color: $color-accent;
   i {
     color: $color-accent;
@@ -28,7 +28,7 @@
   padding-bottom: 0.8em;
   @media (max-width: 575px) {
     padding: 1em 2em;
-    background: darken($color-dark, 5%);
+    background: darken($color-main, 5%);
   }
 }
 
