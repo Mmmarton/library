@@ -21,13 +21,22 @@
 
 .navbar-brand {
   margin-right: 1em;
-  padding-bottom: 0.1em;
 }
 
 .navbar-nav {
   padding-right: 1em;
+  padding-bottom: 0.8em;
   @media (max-width: 575px) {
     padding: 1em 2em;
     background: darken($color-dark, 5%);
+  }
+}
+
+.nav-link {
+  padding-bottom: 0;
+  color: $color-accent;
+
+  &:hover {
+    color: lighten($color-accent, 10%);
   }
 }
