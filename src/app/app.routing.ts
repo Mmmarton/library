@@ -4,6 +4,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { BooksComponent } from './pages/books/books.component';
+import { BookViewComponent } from './pages/book-view/book-view.component';
 
 const routes: Routes = [
   {
@@ -17,7 +18,26 @@ const routes: Routes = [
   },
   {
     path: 'books',
-    component: BooksComponent
+    children: [
+      {
+        path: '',
+        component: BooksComponent
+      },
+      {
+        path: ':id',
+        children: [
+          {
+            path: '',
+            redirectTo: 'view',
+            pathMatch: 'full'
+          },
+          {
+            path: 'view',
+            component: BookViewComponent
+          }
+        ]
+      }
+    ]
   },
   {
     path: 'contributors',
@@ -26,6 +46,11 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'home',
+    pathMatch: 'full'
   }
 ];
 

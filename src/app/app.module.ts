@@ -10,6 +10,7 @@ import { BooksComponent } from './pages/books/books.component';
 import { ContributorsComponent } from './pages/contributors/contributors.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BookPreviewComponent } from './book-preview/book-preview.component';
+import { BookViewComponent } from './pages/book-view/book-view.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BookPreviewComponent } from './book-preview/book-preview.component';
     BooksComponent,
     ContributorsComponent,
     ContactComponent,
-    BookPreviewComponent
+    BookPreviewComponent,
+    BookViewComponent
   ],
   imports: [
     BrowserModule,
