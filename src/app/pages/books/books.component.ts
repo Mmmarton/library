@@ -13,6 +13,7 @@ export class BooksComponent implements OnInit {
   ngOnInit() {
     for (let i = 0; i < 10; i++) {
       const preview = new BookPreview();
+      preview.id = i;
       preview.author = 'Alfred L. Howes';
       preview.title = 'Dachau';
       preview.description =

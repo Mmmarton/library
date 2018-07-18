@@ -1,3 +1,3 @@
 <div class="container">
-  <book-preview *ngFor="let bookPreview of bookPreviews" [preview]="bookPreview"></book-preview>
+  <book-preview *ngFor="let bookPreview of bookPreviews" [preview]="bookPreview" [routerLink]="[bookPreview.id, 'view']"></book-preview>
 </div>
