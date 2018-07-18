@@ -12,5 +12,17 @@
 }
 
 .promo-container {
-  padding: 1em;
+  padding: 2em 3em;
+  @media (max-width: 575px) {
+    padding: .5em;
+  }
+}
+
+.title {
+  margin-bottom: 1em;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
 }
