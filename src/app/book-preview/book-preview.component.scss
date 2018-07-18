@@ -1,0 +1,19 @@
+@import '../../scss/colors';
+
+.preview-image {
+  height: 10em;
+  width: auto;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.container {
+  padding: 1em 0 2em 1em;
+}
+
+.card {
+  margin-bottom: 1em;
+  background-color: desaturate(darken($color-background, 10%), 10%);
+}

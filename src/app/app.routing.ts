@@ -1,9 +1,9 @@
-import { ContactComponent } from './contact/contact.component';
-import { ContributorsComponent } from './contributors/contributors.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ContributorsComponent } from './pages/contributors/contributors.component';
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { BooksComponent } from './books/books.component';
+import { HomeComponent } from './pages/home/home.component';
+import { BooksComponent } from './pages/books/books.component';
 
 const routes: Routes = [
   {
